@@ -315,3 +315,38 @@ footer { text-align:center; color:var(--muted); padding:2rem 1rem; border-top:1p
     height: 650px;
   }
 }
+
+
+/* Add this block at the bottom of style.css */
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.language-button {
+  min-width: 38px;
+  padding: 0.45rem 0.6rem;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.language-button:hover { color: var(--accent); }
+.language-button.active { background: var(--accent); color: var(--bg); }
+
+@media (max-width: 800px) {
+  .site-header { flex-wrap: wrap; gap: 0.75rem; }
+  .language-switcher { margin-left: auto; }
+}
+
